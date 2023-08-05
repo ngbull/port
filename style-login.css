@@ -1,0 +1,97 @@
+@font-face {
+    font-family: poppins;
+    src: url(font/Poppins-Regular.ttf);
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+body{
+    
+    
+    background: linear-gradient(24deg, rgb(0, 0, 0) 0%, rgb(66, 34, 136) 50%, rgb(0, 0, 0) 100%);
+    background-repeat: no-repeat;
+    
+    position: relative;
+}
+.centr{
+      margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.card-trp{
+    width: 900px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    filter: drop-shadow(10px);
+    padding-top: 50px;
+}
+.trp{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.login-card{
+    padding: 20px;
+    border-radius: 20px;
+}
+.login-title{
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin-top: 100px;
+}
+.login-form{
+    margin-left: -10px;
+}
+.warsi-text{
+    color: #6f00ff;
+    font-family: poppins;
+}
+.title-text{
+    font-size: 70px;
+}
+
+.input{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #6f00ff;
+    border-color: #6f00ff;
+}
+.input:focus{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #6f00ff;
+    border-color: #6f00ff;
+}
+.input::after{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #6f00ff;
+    border-color: #6f00ff;
+}
+input[type="checkbox"]:checked{
+    background-color: #6f00ff;;
+    color: #6f00ff;
+    border-color: #6f00ff;
+}
+.login-center{
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-top: 10px;
+    
+}
+hr.line {
+    border: 1px solid rgb(65, 91, 60);
+}
+.vr{
+    margin: 0;
+}
+.subbutton{
+    background: #6f00ff;
+    width: 120px;
+    color: white;
+}
+.cpr{
+    margin-top: 52%;
+}
