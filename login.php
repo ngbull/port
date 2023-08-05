@@ -1,0 +1,76 @@
+<?php 
+    session_start();
+    if (isset($_SESSION['login'])) {
+    if ($_SESSION['role'] === '1') {
+      header("Location: admin/dashboard.php");
+    } elseif ($_SESSION['role'] === '2') {
+      header("Location: user/pesanan.php");
+    }
+  }
+    
+    require 'function.php';
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WARSI | Login</title>
+    <!-- style Booststrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- my style -->
+    <link rel="stylesheet" href="style/style-login.css" type="text/css">
+    
+</head>
+<body class="warsi-text">
+    <div class="container">
+    <div class="card-trp centr login-card">
+        <div class="login-center row justify-content-center">
+    <div class="col-5">
+        <div class="login-title">
+      <h1 class="title-text">WARSI</h1>
+      <hr class="line">
+      <h6>WEBSITE KASIR</h6>
+      </div>
+    </div>
+    <div class="col-1">
+        <hr width="1" size="400" class="">
+</div>
+    <div class="col login-form">
+        <h1 class="mt-5">Login</h1>
+      <form>
+            <div class="mb-3">
+                
+                <label for="exampleInputEmail1" class="form-label mb-5">Gunakan Email dan Password anda untuk masuk</label>
+                <input type="email" class="trp input form-control rounded-pill border-dark" id="exampleInputEmail1" placeholder="Email" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <input type="password" class="trp input form-control rounded-pill border-dark" placeholder="Password" id="exampleInputPassword1"> 
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="trp form-check-input input-cb success" id="exampleCheck1">
+                <label class="" for="exampleCheck1">Ingat saya</label>
+            </div>
+            <div class="text-center">
+            <button type="submit" class="btn btn-success subbutton rounded-pill">Login</button>
+            </div>
+        </form>
+    </div>
+  </div>
+        
+    </div>
+    </div>
+    <footer class=" cpr">
+  <!-- Copyright -->
+  <div class="text-center p-3" ">
+   Kelompok 4 © 2022
+  </div>
+  <!-- Copyright -->
+</footer>
+    </div>
+</body>
+</html> 
